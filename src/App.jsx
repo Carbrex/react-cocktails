@@ -10,7 +10,7 @@ import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div>
+    <div className='bg-gray-700 text-slate-200 min-h-screen'>
       <Router>
         <Navbar />
         <Switch>

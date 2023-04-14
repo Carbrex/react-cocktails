@@ -46,40 +46,40 @@ const SingleCocktail = () => {
     return <Loading/>
   }
   if (!cocktail) {
-    return <h2 className='section-title'>no cocktail to display</h2>
+    return <h2 className='text-3xl capitalize tracking-[0.3rem] text-center mb-14 mt-4'>no cocktail to display</h2>
   }
   const {name,image,info,category,glass,instructions,ingredients}=cocktail;
   return (
-    <section className='section cocktail-section'>
-      <Link to="/" className='btn btn-primary'>
+    <section className=' py-20 px-0 text-center'>
+      <Link to="/" className='uppercase tracking-widest  border-2 py-2 px-3 inline-block cursor-pointer text-xs rounded bg-violet-600 text-white border-transparent hover:bg-violet-200 hover:text-violet-600'>
         back home
       </Link>
-      <h2 className="section-title">{name}</h2>
-      <div className="drink">
-        <img src={image} alt={name} />
-        <div className="drink-info">
-          <p>
-            <span className="drink-data">name :</span>
+      <h2 className="text-3xl capitalize tracking-[0.3rem] text-center mb-14 mt-4 font-semibold">{name}</h2>
+      <div className="w-5/6 max-w-6xl my-0 mx-auto text-left lg:grid lg:grid-cols-[2fr_3fr] lg:gap-12 lg:items-center">
+        <img src={image} alt={name} className='rounded'/>
+        <div className="pt-8 lg:pt-0">
+          <p className='font-bold capitalize leading-relaxed mb-5'>
+            <span className="mr-2 bg-violet-200 py-1 px-2 rounded text-violet-600">name :</span>
             {name}
           </p>
-          <p>
-            <span className="drink-data">category :</span>
+          <p className='font-bold capitalize leading-relaxed mb-5'>
+            <span className="mr-2 bg-violet-200 py-1 px-2 rounded text-violet-600">category :</span>
             {category}
           </p>
-          <p>
-            <span className="drink-data">info :</span>
+          <p className='font-bold capitalize leading-relaxed mb-5'>
+            <span className="mr-2 bg-violet-200 py-1 px-2 rounded text-violet-600">info :</span>
             {info}
           </p>
-          <p>
-            <span className="drink-data">glass :</span>
+          <p className='font-bold capitalize leading-relaxed mb-5'>
+            <span className="mr-2 bg-violet-200 py-1 px-2 rounded text-violet-600">glass :</span>
             {glass}
           </p>
-          <p>
-            <span className="drink-data">instructions:</span>
+          <p className='font-bold capitalize leading-relaxed mb-5'>
+            <span className="mr-2 bg-violet-200 py-1 px-2 rounded text-violet-600">instructions:</span>
             {instructions}
           </p>
-          <p>
-            <span className="drink-data">ingredients:</span>
+          <p className='font-bold capitalize leading-relaxed mb-5'>
+            <span className="mr-2 bg-violet-200 py-1 px-2 rounded text-violet-600">ingredients:</span>
             {
               ingredients.map((item,index)=>{
                 return item?<span key={index}>{item}</span> :null;
