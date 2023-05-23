@@ -10,7 +10,7 @@ To run React Cocktails DB locally, follow these steps:
 2. Navigate to the project directory: `cd react-cocktails`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
-5. Open your browser and visit `http://localhost:3000` to access the application.
+5. Open your browser and visit `http://localhost:5173` to access the application.
 
 ## Features
 
