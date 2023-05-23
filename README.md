@@ -23,7 +23,7 @@ To run React Cocktails DB locally, follow these steps:
 
 - React: A JavaScript library for building user interfaces.
 - React Router: Enables navigation and routing within the application.
-- CSS: Styling the components and layout of the application.
+- TailwindCSS: Styling the components and layout of the application.
 - The CocktailDB API: Provides the cocktail database and recipe information.
 
 ## Contributing
